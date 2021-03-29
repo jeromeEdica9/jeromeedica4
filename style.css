@@ -1,0 +1,153 @@
+html {
+
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+.header {
+
+    background: linear-gradient(#0f0303,#34BAD4,#000000,#8F9AA5);
+    height: 5rem;
+    width: 100%;
+    
+}
+
+.header > h1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    -webkit-text-stroke:0.8px white;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 8px black;
+}
+
+.section1 {
+
+    position: absolute;
+    background: rgb(93, 92, 90);
+    height: 100vh;
+    color: cornsilk;
+    
+}
+
+.section1 > .content {
+
+    position: relative;
+    background: rgb(62, 63, 61);
+    height: 70%;
+    width: 80%;
+    margin: 5rem auto;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:"a a a a a a a "
+                        "e b c c d d d"
+                        "e f g h h i i"
+                        "e f g h h i i" ;
+
+   grid-gap: 5px;
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 0px 0px  40px black;
+   
+}   
+
+
+
+.content > div {
+
+    border-radius: 4px;
+    display: grid;
+    justify-content: center;
+    align-items: center ;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+
+#a{
+
+    grid-area: a;
+    background: violet;
+}
+#b{
+    grid-area: b;
+    background: #FCDBCC;
+}
+#c{
+    grid-area: c;
+    background: #695490;
+}
+#d{
+    grid-area: d;
+    background: #DE8932;
+}
+#e{
+    grid-area: e;
+    background: #A65F5C;
+}
+#f{
+    grid-area: f;
+    background: #93D9B4;
+}
+#g{
+    grid-area: g;
+    background: #FA8352;
+}
+#h{
+    grid-area: h;
+    background: rgb(255, 255, 162);
+}
+#i{
+    grid-area: i;
+    background: tomato;
+}
+
+
+.section2 {
+
+    position: absolute;
+    margin: 37.4em auto;
+    height: 60vh;
+    background: #34BAD4;
+}
+.section2 > .color-picker {
+
+    width: 20%;
+    height: 50%;
+    margin: 5em auto;
+    
+ 
+}
+
+.color-picker > input  {
+
+    background: black;
+    border-radius: 100px;
+    padding: 30px;
+    outline: none;
+}
+
+label  {
+
+    text-transform: uppercase;
+    position: relative;
+    top: 0px;
+    left: 12px;
+}
+
+
+
+
+ 
+
